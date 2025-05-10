@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=TimesNewRoman:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Me, Myself and Coffee | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+  <img src="images/logo.png" alt="Logo" class="logo-img">
+</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <h1>We got your morning covered with</h1>
+    </div>
+  </header>
+<main>
+  <section class="bg-section bg1">
+    <div class="text">
+<P>We got your morning covered with</P>
+<H2>ME, MYSELF& COFFEE</H2>
+
+<p align='LEFT'> It is best to start your day with a cup of coffee. Discover the
+best flavours coffee you will ever have. We provide the best
+for our customers.</p>
+    </div>
+  </section>
+
+  <section class="bg-section bg2">
+    <div class="text-overlay">
+      <P>It is best to start your day with a cup of coffee. Discover the
+best flavours coffee you will ever have. We provide the best
+for our customers.</P>
+    </div>
+  </section>
+
+  <section class="bg-section bg3">
+    <div class="text-overlay">
+      <h2>GOAL</h2>
+      <p>-Provide high-quality food and drinks for all customers.
+
+<P>-Create a welcoming and relaxing environment.</P>	
+
+<p>-Ensure excellent customer service.</p>
+
+<p>-Offer delicious and affordable options.</p>
+
+<p>-Bring joy and satisfaction through our food and beverages.</p>
+
+<h2>VISION</h2>
+<P>-Me Myself & Coffee has its vision to  grow and make the company a well-known brand, bringing great-tasting food and drinks to more people. To expand across different parts of the Philippines while maintaining the quality and experience our customers love.</P>
+<h2>MISSION</h2>
+<P>-Me Myself & Coffee has its mission to serve quality food and drinks at an affordable price. To create a cozy and happy place where customers can relax and enjoy every sip and bite. We aim to bring comfort and happiness, ensuring that everyone leaves with a smile.</P>
+    </div>
+  </section>
+<section class="bg-section bg4">
+    <div class="text-overlay">
+      <h2>Enjoy a new blend of coffee style</h2>
+      <p>Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
+    </div>
+  </section>
+
+ </main>
+
+
+<section class="bg-section bg1">
+  <div class="text-overlay">
+    <h2>FEATURES AND BEST OFFFERS</h2>
+    <p>CLICK TO VIEW</p>
+    <div class="gallery">
+      <div class="image-container">
+        <img src="images/food1.jpg" alt="Dish 1" class="clickable-image" id="img1">
+        <div class="image-hover-text">1</div>
+      </div>
+      <div class="image-container">
+        <img src="images/food2.jpg" alt="Dish 2" class="clickable-image" id="img2">
+        <div class="image-hover-text">2</div>
+      </div>
+      <div class="image-container">
+        <img src="images/food3.jpg" alt="Dish 3" class="clickable-image" id="img3">
+        <div class="image-hover-text">3</div>
+      </div>
+      <div class="image-container">
+        <img src="images/food4.jpg" alt="Dish 4" class="clickable-image" id="img4">
+        <div class="image-hover-text">4</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="fullscreenModal" class="fullscreen-modal">
+  <span class="close" id="closeModal">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div><script>
+  const modal = document.getElementById("fullscreenModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.getElementById("closeModal");
+
+  document.querySelectorAll('.clickable-image').forEach(image => {
+    image.addEventListener('click', () => {
+      modal.style.display = "flex";
+      modalImg.src = image.src;
+    });
+  });
+
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+</script>
+<section class="about-map-section">
+  <div class="map-about-wrapper">
+    <div class="map-container">
+      <img src="images/map.png" alt="Map Location" class="map-image">
+    </div>
+    <div class="about-container">
+      <h2>ME, MYSELF AND COFFEE</h2>
+      <p>At Me Myself & Coffee, every cup tells a story. Inspired by flavors from around the world, we blend passion and craftsmanship to bring you the perfect brew. Whether you're here for a peaceful solo escape, a friendly catch-up, or a moment of inspiration, our cozy space welcomes you with warmth, aroma, and delightful flavors. Sip, relax, and make every coffee moment truly yours.</p>
+    </div>
+  </div>
+</section>
+  <footer class="site-footer">
+  <p>&copy; 2025 Me, Myself And Coffee. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
